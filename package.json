@@ -14,7 +14,6 @@
 	"type": "module",
 	"packageManager": "pnpm@9.15.4",
 	"scripts": {
-		"app": "pnpm --filter desktop run td",
 		"dev": "pnpm --filter app run dev",
 		"docs": "pnpm --filter docs run dev",
 		"builds": "pnpm -r run build && pnpm -filter app run build-app",

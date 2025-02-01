@@ -4,7 +4,7 @@
 
 ## Gun Vue P2P Crypto Graph Web App Toolkit
 
-Gun-vue is a versatile toolkit that combines the power of the peer-to-peer JavaScript database Gun with the reactivity system of Vue into small, but precise to the purpose apps for everyone to make, share, use and discard whenever we want. It offers pluggable components for UX designers to compose, easily importable composables for UI developers to use, and a 2 LOC starter Relay peer for new p2p network enthusiasts to run on almost any hardware. With growing collection of demos and documentation, Gun-Vue is open-source and accessible to everyone! ✊
+Gun-vue is a versatile toolkit that combines the power of [GUN](https://gun.eco) - the peer-to-peer JavaScript database with the reactivity system of [Vue](https://vuejs.org) into small, but featurefull apps for everyone to make, share, use and discard whenever we want. It offers pluggable components for UX designers to compose, easily importable composables for UI developers to use, and a 2 LOC starter Relay peer for new p2p network enthusiasts to run on almost any hardware. With growing collection of demos and documentation, Gun-Vue is open-source and accessible to everyone! ✊
 
 ## What is @gun-vue?
 
@@ -19,10 +19,6 @@ The main [gun-vue.js.org](https://gun-vue.js.org) web-site is a demo Gun-Vue SPA
 ### [Web app](https://gun-vue.js.org) hosted at GitHub pages and JS.org domain
 
 The app is accessible via the free for open source [js.org](https://js.org) subdomain since [Jan 2022](https://github.com/js-org/js.org/commit/56a145bb39e53c6d63edf63b26d331cf30c35061) and hosted at GitHub pages. It's built as a single HTML file that can be served from any domain or just opened as a local file. You can just press `Save Page As...` and have your local-first reactive p2p webapp with you everywhere.
-
-### [Desktop app releases](https://github.com/DeFUCC/gun-vue/releases) via GitHub Actions and Tauri
-
-Whenever a new version of Gun-Vue is published, an automated action creates a new release draft with a full kit of lightweight native desktop apps for Windows, Mac OS and Linux with [Tauri](https://tauri.app) by a [GitHub Action](https://github.com/DeFUCC/gun-vue/actions/workflows/tauri.yml). Mobile apps are coming too. This is a very nice way to have Gun-Vue available in case of DNS interuptions. Local relay should become a part of it, especially once GUN Rust port is stable enougth to be somehow integrated into Tauri app structure. So it can be essentially a full GUN node in a <10Mb native app.
 
 ### [Open source code](https://github.com/DeFUCC/gun-vue/tree/master/src) at GitHub [pnpm](https://pnpm.io) monorepo
 

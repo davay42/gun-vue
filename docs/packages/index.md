@@ -1,13 +1,11 @@
 ---
-title: '@gun-vue packages'
+title: "@gun-vue packages"
 ---
 
-
-  - "composables"
-  - "components"
-  - "docs"
-  - "app"
-  - "relay"
-  - "desktop"
-  - "examples"
-  - "."
+- "composables"
+- "components"
+- "docs"
+- "app"
+- "relay"
+- "examples"
+- "."
