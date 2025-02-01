@@ -5,9 +5,9 @@ import { currentRoom, useUser, rootRoom, useBackground, setPeer, relay } from "#
 
 import config from '../gun.config.json'
 
-import NavBar from './app/NavBar.vue'
-import SideBar from './app/SideBar.vue'
-import NavFooter from './app/NavFooter.vue'
+import NavBar from './components/NavBar.vue'
+import SideBar from './components/SideBar.vue'
+import NavFooter from './components/NavFooter.vue'
 
 const router = useRouter()
 const route = useRoute();

@@ -1,7 +1,7 @@
 <script setup>
-import { currentRoom, rootRoom } from './composables';
+import { currentRoom, rootRoom } from '#composables';
 
-import { RoomPage } from './components'
+import { RoomPage } from '#components'
 </script>
 
 <template lang="pug">

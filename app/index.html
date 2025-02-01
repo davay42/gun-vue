@@ -29,7 +29,7 @@
 	<div id="app"></div>
 	<script type="module">
 		import { createApp } from "vue";
-		import App from "../src/app.vue";
+		import App from "./App.vue";
 
 		import '@unocss/reset/tailwind.css'
 		import 'uno.css'
@@ -37,7 +37,7 @@
 
 		import { createRouter, createWebHashHistory } from "vue-router";
 
-		import routes from '../src/routes'
+		import routes from './routes/index'
 
 		import { GunVuePlugin } from "../src/components"; // use '@gun-vue/components' in your apps
 

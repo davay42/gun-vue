@@ -1,4 +1,4 @@
-const modules = import.meta.glob('./**/routes.js', { eager: true })
+const modules = import.meta.glob('../../src/**/routes.js', { eager: true })
 
 const routes = Object.values(modules).map(r => r?.default[0])
 

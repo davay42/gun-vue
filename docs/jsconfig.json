@@ -1,0 +1,25 @@
+{
+	"extends": "../tsconfig",
+	"typedocOptions": {
+		"entryPoints": [
+			"../src/"
+		],
+		"readme": "reference/index.md",
+		"includeVersion": true,
+		"out": "reference/typedoc/",
+		"githubPages": false,
+		"entryPointStrategy": "expand",
+		"name": "Gun-Vue docs",
+		"defaultCategory": "Composables",
+		"exclude": [
+			"**/routes.js",
+			"**/index.js",
+			"**/components.js",
+			"**/composables.js",
+			"**/app.js",
+			"**/all-components.js",
+			"**/worker.js",
+			"**/*.d.ts"
+		]
+	}
+}

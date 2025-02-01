@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { RoomButton, UiDark, QrShare, GunTools, UserIcon } from '../components'
+import { RoomButton, UiDark, QrShare, GunTools, UserIcon } from '#components'
 import { currentRoom, useBackground, useColor } from '#composables';
 import { computed } from 'vue'
 
@@ -49,4 +49,3 @@ const color = useColor('light')
   @apply p-2 text-xl rounded-xl cursor-pointer flex items-center;
 }
 </style>
-

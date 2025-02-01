@@ -1,6 +1,6 @@
-<script setup  lang="ts">
+<script setup lang="ts">
 import { rootRoutes } from '../routes'
-import pack from '../../app/package.json'
+import { version } from '../package.json'
 </script>
 
 <template lang="pug">
@@ -10,7 +10,7 @@ style="flex: 0 0 auto"
   a.p-3.text-xs.text-right.opacity-50(
     href="https://github.com/DeFUCC/gun-vue/releases"
     target="_blank"
-    ) v.{{ pack.version }}
+    ) v.{{ version }}
   router-link.flex.items-center.px-3.py-3.link(
     v-for="(link, l) in rootRoutes" 
     :key="link" 
