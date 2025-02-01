@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { rootRoutes } from '../routes'
+import { rootRoutes } from '../pages'
 import { version } from '../package.json'
 </script>
 

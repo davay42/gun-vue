@@ -12,7 +12,7 @@ export default [
       {
         path: ':topic',
         props: true,
-        component: () => import('./ChatRoom.vue')
+        component: () => import('./[topic].vue')
       }
     ]
   }

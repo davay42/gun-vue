@@ -1,7 +1,7 @@
 <script setup>
 import { currentRoom } from '#composables';
 
-import { ChatRoom } from '../components'
+import { ChatRoom } from '#components'
 </script>
 
 <template lang="pug">

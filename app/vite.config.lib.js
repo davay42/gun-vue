@@ -19,7 +19,7 @@ export default defineConfig({
 			allow: ['../']
 		}
 	},
-	envPrefix: ['VITE_', 'TAURI_'],
+	envPrefix: ['VITE_'],
 	publicDir: "public-lib",
 	plugins: [
 		vue(), Unocss()
@@ -30,7 +30,7 @@ export default defineConfig({
 	base: './',
 	build: {
 		lib: {
-			entry: path.resolve(dirname, 'app.js'),
+			entry: path.resolve(dirname, 'index.js'),
 			name: 'GunVue',
 			// the proper extensions will be added
 			fileName: 'app',

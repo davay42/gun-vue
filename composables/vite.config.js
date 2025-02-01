@@ -3,7 +3,6 @@ import { fileURLToPath } from "node:url";
 import { defineConfig } from "vite";
 import checker from "vite-plugin-checker";
 
-//@ts-ignore
 const filename = fileURLToPath(import.meta.url);
 const dirname = path.dirname(filename);
 
@@ -17,6 +16,9 @@ export default defineConfig({
 			},
 		}),
 	],
+	rollupOptions: {
+		external: ['vue']
+	},
 	build: {
 		outDir: "dist",
 		lib: {
@@ -29,7 +31,6 @@ export default defineConfig({
 				minifyInternalExports: false,
 			},
 		},
-		commonjsOptions: {},
 	},
 	define: {
 		"process.env": {},
