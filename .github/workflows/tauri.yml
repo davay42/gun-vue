@@ -19,8 +19,10 @@ jobs:
       - name: Node.js setup
         uses: actions/setup-node@v4
 
-      - name: Install Rust Toolchain
-        uses: actions-rs/toolchain@v1
+      - name: Install Rust (Nightly)
+        run: |
+          curl https://sh.rustup.rs -sSf | sh -s -- -y --default-toolchain nightly
+          source $HOME/.cargo/env
 
       - uses: pnpm/action-setup@v4
         name: Install pnpm
@@ -36,11 +38,10 @@ jobs:
 
       - name: Build the app
         uses: tauri-apps/tauri-action@v0
-
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          tagName: "v.__VERSION__" # tauri-action replaces \_\_VERSION\_\_ with the app version
+          tagName: "v.__VERSION__" # tauri-action replaces __VERSION__ with the app version
           releaseName: "@gun-vue v.__VERSION__"
           releaseBody: "See the assets to download this version and install on your desktop platform."
           releaseDraft: true
