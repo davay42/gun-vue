@@ -20,7 +20,6 @@
 		"builds": "pnpm -r run build && pnpm -filter app run build-app",
 		"preview": "pnpm --filter app run preview",
 		"relay": "pnpm --filter relay run start",
-		"tauri": "pnpm --filter desktop run tb",
 		"deploy": "cd app && sh deploy.sh",
 		"change": "pnpm changeset",
 		"version": "pnpm changeset version",
